@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buttons Demo</title>
+<link href="../basis.css" rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+<script src="demo.js" async=""></script>  
+</head>
+
+<body>
+
+<section>
+    <article>       
+        
+        <h1>Buttons</h1>
+        
+        <h2 class="mt-s mb-s lined">Button Types</h2>
+        
+        <div class="buttons spaced" data-preview='{"offset": "12", "html": "inner"}'>
+            <a class="button text-m" href="#">A Tag</a>
+            <button class="button text-m">Button tag</button>
+            <input class="button text-m" type="submit" value="Submit input">
+            <input class="button text-m" type="reset" value="Reset input">
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Button Sizes</h2>
+        
+        <h3 class="mt-s mb-s">Text Sizes</h3>
+        
+        <div class="buttons spaced" data-preview='{"offset": "12", "html": "inner"}'>
+            <a class="button text-xxs" href="#">Label</a>
+            <a class="button text-xs" href="#">Label</a>
+            <a class="button text-s" href="#">Label</a>
+            <a class="button text-m" href="#">Label</a>
+            <a class="button text-l" href="#">Label</a>
+            <a class="button text-xl" href="#">Label</a>
+            <a class="button text-xxl" href="#">Label</a>
+            <a class="button text-body" href="#">Label</a>
+        </div>
+        
+        <h3 class="mt-m mb-s">fit</h3>
+        
+        <button class="button fit" data-preview='{"offset": "8"}'>Button</button>
+
+        <h2 class="mt-l mb-s lined">Button Styles</h2>
+        
+        <div class="buttons spaced" data-preview='{"offset": "12", "html": "inner"}'>
+            <a class="button text-m" href="#">Button normal</a>
+            <a class="button text-m primary" href="#">Button primary</a>
+            <a class="button text-m raw" href="#">Button raw</a>
+        </div>       
+        
+        <h2 class="mt-l mb-s lined">Button States</h2>
+        
+        <div class="buttons spaced" data-preview='{"offset": "12", "html": "inner"}'>
+            <a class="button text-m active" href="#">Active Button</a>
+            <button class="button text-m" disabled>Disabled Button</button>
+            <button class="button text-m loading">Loading Button</button>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Button Icons</h2>
+        
+        <div class="buttons spaced" data-preview='{"offset": "12", "html": "inner"}'>
+            <a class="button text-m" href="#">
+                <span class="icon"><span>User</span><span>⚥</span></span>
+            </a>
+            <button class="button text-m">
+                <span class="icon"><span>⚥</span><span>User</span></span>
+            </button>
+        </div>        
+        
+        <h2 class="mt-l mb-s lined">List Of Buttons</h2>       
+
+        <h3 class="mb-s">Spaced</h3>
+        
+        <div class="buttons spaced" data-preview='{"offset": "8"}'>
+            <a class="button text-m" href="#">A Tag</a>
+            <button class="button text-m">Button tag</button>
+            <input class="button text-m" type="submit" value="Submit input">
+            <input class="button text-m" type="reset" value="Reset input">
+        </div>
+        
+        <h3 class="mt-l mb-s">Grouped</h3>
+        
+        <div class="buttons grouped" data-preview='{"offset": "8"}'>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+            </select>
+            <input name="email" id="label" type="email" value="">
+            <button class="button">Submit</button>
+        </div>
+        
+        <h3 class="mt-l mb-s">Expanded</h3>
+        
+        <div class="buttons" data-preview='{"offset": "8"}'>
+            <button class="button expanded">Button</button>
+            <button class="button expanded">Button</button>
+        </div>
+
+        <h3 class="mt-l mb-s">Grouped and Expanded</h3>
+        
+        <div class="buttons grouped" data-preview='{"offset": "8"}'>
+            <input class="expanded" name="search" id="search" type="search" value="">
+            <button class="button">Search</button>
+        </div>
+        
+    </article>
+</section>
+    
+</body>
+</html>

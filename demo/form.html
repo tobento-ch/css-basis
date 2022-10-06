@@ -1,0 +1,267 @@
+<!--
+field left or top
+-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Form Demo</title>
+<link href="../basis.css" rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+<script src="demo.js" async=""></script>
+<style>
+section{ margin: 0 auto; max-width: 80em; padding: 0 1em;}
+article{ margin: 2em 0 4em;}
+    /*label{ display: block;}
+    .field:nth-child(odd){background: #f5f5f5; }*/
+</style>    
+</head>
+
+<body>
+
+<section>
+    <article>
+        <h1>Form</h1>
+        
+        <h2 class="mt-s lined">Elements</h2>
+        
+        <h3 class="mt-s mb-s">Input</h3>
+        
+        <div class="mb-s" data-preview='{"offset": "12", "html": "inner"}'>
+            <input type="text">
+            <input type="text" value="disabled" disabled>
+            <input type="text" value="readonly" readonly>
+        </div>
+        
+        <div class="mt-m mb-s" data-preview='{"offset": "12", "html": "inner"}'>
+            <input type="checkbox">
+            <input type="checkbox" checked>
+            <input type="checkbox" disabled>
+            <input type="radio">
+            <input type="radio" checked>
+            <input type="radio" disabled>            
+        </div>        
+        
+        <h3 class="mt-l mb-s">Textarea</h3>
+        
+        <div class="mb-s" data-preview='{"offset": "12", "html": "inner"}'>
+            <textarea></textarea>
+            <textarea disabled>disabled</textarea>
+            <textarea readonly>readonly</textarea>
+        </div>
+        
+        <h3 class="mt-l mb-s">Select</h3>
+        
+        <div class="mb-s" data-preview='{"offset": "12", "html": "inner"}'>
+            <select>
+                <option value="bmw">Bmw</option>
+                <option value="fiat">Fiat</option>
+                <option value="volvo" disabled>Volvo</option>
+            </select>
+            <select disabled>
+                <option value="bmw">Bmw</option>
+                <option value="fiat">Fiat</option>
+            </select>
+            <select size="3">
+                <option value="bmw">Bmw</option>
+                <option value="fiat">Fiat</option>
+                <option value="volvo">Volvo</option>
+            </select>
+        </div>
+                
+        <h2 class="mt-l mb-s lined">Element Sizes</h2>
+        
+        <p class="text-body mb-s">Use the <code>fit</code> class to fit its parent container.</p>
+        
+        <div class="mb-s" data-preview='{"offset": "12", "html": "inner"}'>
+            <input class="fit" name="fit" type="text">
+            <textarea class="fit"></textarea>
+            <select class="fit" name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+            </select>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Field</h2>
+        
+        <h3 class="mb-s">Vertical field</h3>
+        
+        <div class="field" data-preview='{"offset": "8"}'>
+            <div class="field-label">
+                <label for="firstname">Firstname<span class="optional">(optional)</span></label>
+            </div>
+            <div class="field-body">
+                <input name="firstname" id="firstname" type="text">
+                <p class="text-xxs">Some description or message.</p>
+            </div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Horizontal field</h3>
+        
+        <p class="mb-m">The field gets vertical on mobile breakpoint.</p>
+        
+        <div class="field field-h" data-preview='{"offset": "8"}'>
+            <div class="field-label">
+                <label for="lastname">Lastname<span class="required">required</span></label>
+            </div>
+            <div class="field-body">
+                <input name="lastname" id="lastname" type="text">
+                <p class="text-xxs">Some description or message.</p>
+            </div>
+        </div>
+
+        <h3 class="mt-l mb-s">Vertical checkbox or radio</h3>
+        
+        <div class="field" data-preview='{"offset": "8"}'>
+            <div class="field-label">
+                <label>Choose your roles<span class="required">required</span></label>
+            </div>
+            <div class="field-body">
+                <span class="wrap-v">
+                    <input name="roles[]" id="editor" type="checkbox" value="editor">
+                    <label for="editor">editor</label>
+                </span>
+                <span class="wrap-v">
+                    <input name="roles[]" id="administrator" type="checkbox" value="administrator">
+                    <label for="administrator">administrator</label>
+                </span>
+                <p class="text-xxs">Some description or message.</p>
+            </div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Horizontal checkbox or radio</h3>
+        
+        <div class="field" data-preview='{"offset": "8"}'>
+            <div class="field-label">
+                <label>Choose a color<span class="required">required</span></label>
+            </div>
+            <div class="field-body">
+                <span class="wrap-h">
+                    <input name="color" id="blue" type="radio" value="blue">
+                    <label for="blue">blue</label>
+                </span>
+                <span class="wrap-h">
+                    <input name="color" id="red" type="radio" value="red">
+                    <label for="red">red</label>
+                </span>
+                <p class="text-xxs">Some description or message.</p>
+            </div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Vertical example</h3>
+        
+        <div class="field-max-width" data-preview='{"offset": "12", "html": "inner", "details": "close"}'>
+            <div class="field">
+                <div class="field-label">
+                    <label for="email">Salutation<span class="required">required</span></label>
+                </div>
+                <div class="field-body">
+                    <span class="wrap-h">
+                        <input name="salutation" id="ms" type="radio" value="ms">
+                        <label for="ms">Mrs</label>
+                    </span>
+                    <span class="wrap-h">
+                        <input name="salutation" id="mr" type="radio" value="mr">
+                        <label for="mr">Mr</label>
+                    </span>
+                    <p class="text-xxs">Some description or message.</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">
+                    <label for="name">Name<span class="optional">(optional)</span></label>
+                </div>
+                <div class="field-body">
+                    <input name="name" id="name" type="text">
+                    <p class="text-xxs">Some description or message.</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">
+                    <label for="email">E-Mail<span class="required">required</span></label>
+                </div>
+                <div class="field-body">
+                    <input name="email" id="email" type="email">
+                    <p>Some description or message.</p>
+                </div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">
+                    <label for="terms">Message<span class="required">required</span></label>
+                </div>
+                <div class="field-body">
+                    <textarea></textarea>
+                    <p>Some description or message.</p>
+                </div>
+            </div>            
+
+            <div class="field">
+                <div class="field-label">
+                    <label for="terms">Terms<span class="required">required</span></label>
+                </div>
+                <div class="field-body">                
+                    <div class="cols">
+                        <div>
+                            <input name="terms" id="terms" type="checkbox" value="1">
+                        </div>
+                        <div class="col ml-xs">
+                            <label for="terms" class="input-value">I agree to the terms.</label>
+                            <a href="#">Read our terms and conditions.</a>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="field-label"></div>
+                <div class="field-body buttons spaced">                
+                    <button class="button primary text-m">Submit</button>
+                    <button class="button text-m">Cancel</button>
+                </div>
+            </div>            
+        </div>
+
+        <h3 class="mt-l mb-m">Horizontal example</h3>
+        
+        <div class="field-max-width" data-preview='{"offset": "12", "html": "inner", "details": "close"}'>
+
+            <div class="field field-h">
+                <div class="field-label">
+                    <label for="username">Username<span class="required">required</span></label>
+                </div>
+                <div class="field-body">
+                    <input name="name" id="username" type="text">
+                    <p class="text-xxs">Some description or message.</p>
+                </div>
+            </div>
+
+            <div class="field field-h">
+                <div class="field-label">
+                    <label for="password">Password<span class="required">required</span></label>
+                </div>
+                <div class="field-body">
+                    <input name="password" id="password" type="password">
+                    <p>Some description or message.</p>
+                </div>
+            </div>
+
+            <div class="field field-h">
+                <div class="field-label"></div>
+                <div class="field-body buttons spaced">                
+                    <button class="button primary text-m">Login</button>
+                    <button class="button text-m">Cancel</button>
+                </div>
+            </div>            
+        </div>
+        
+    </article>
+</section>
+    
+</body>
+</html>

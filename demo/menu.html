@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu Demo</title>
+<link href="../basis.css" rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+<script src="demo.js" async=""></script>
+<style>
+/* Theme specific menu style */
+ul.menu-main a:hover {background: #f5f5f5;}
+ul.menu-main {border: 1px solid #999;}
+</style>    
+</head>
+
+<body>
+
+<section>
+    <article>
+        
+        <h1>Menu</h1>
+        
+        <h2 class="mt-s mb-s lined">Vertical</h2>
+        
+        <ul class="menu-v text-s" data-preview='{"offset": "8"}'>
+            <li><a href="#">Team</a></li>
+            <li><span>Contact</span>
+            <ul>
+                <li><span class="icon"><span>User</span><span>⚥</span></span>
+                <ul class="text-xs">
+                    <li><a class="" href="#">South</a></li>
+                    <li><a href="#">Nord</a></li>
+                </ul>
+                </li>
+                <li><a href="#" class="active">Formular</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+        </ul>
+        
+        <h3 class="mt-l mb-s">Spaced</h3>
+        
+        <p class="mb-s text-body">The <code>spaced</code> class assigns default paddings for the items which can be used in combination with your menu style class.</p>
+
+        <ul class="menu-v spaced menu-main text-m" data-preview='{"offset": "8"}'>
+            <li><a href="#">Team</a></li>
+            <li><span class="icon"><span>User</span><span>⚥</span></span>
+            <ul>
+                <li><span>Locations</span>
+                <ul class="text-xs">
+                    <li><a class="" href="#">South</a></li>
+                    <li><a href="#">Nord</a></li>
+                </ul>
+                </li>
+                <li><a href="#" class="active">Formular</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+        </ul>        
+        
+        
+        <h2 class="mt-l mb-s lined">Horizontal</h2>
+
+        <ul class="menu-h text-s" data-preview='{"offset": "8"}'>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+        
+        <h3 class="mt-l mb-s">Spaced</h3>
+        
+        <p class="mb-s text-body">The <code>spaced</code> class assigns default paddings for the items which can be used in combination with your menu style class.</p>
+
+        <ul class="menu-h spaced menu-main menu-b" data-preview='{"offset": "8"}'>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">News</a></li>
+        </ul>        
+                
+        <h2 class="mt-l mb-s lined">Horizontal and vertical</h2>
+
+        <ul class="menu-h spaced menu-main text-m" data-preview='{"offset": "8"}'>
+            <li><a href="#">Team</a></li>
+            <li><span>Contact</span>
+            <ul class="menu-v text-xs">
+                <li><span>Locations</span>
+                <ul>
+                    <li><a class="" href="#">South</a></li>
+                    <li><a href="#">Nord</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Formular</a></li>
+            </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li class=""><a href="#">News</a></li>
+        </ul>     
+        
+    </article>
+</section>
+    
+</body>
+</html>

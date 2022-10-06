@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Typography Demo</title>
+<link href="../basis.css" rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+<script src="demo.js" async=""></script>
+<style>
+:root {
+    --font-secondary: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.max-width-200 {max-width: 200px;}
+</style>
+</head>
+
+<body>
+
+<section>
+    <article>
+        
+        <h1>Typography</h1>
+        
+        <h2 class="mt-s mb-s lined">Text Sizes</h2>
+
+        <div data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-xxs">Lorem ipsum</p>
+            <p class="text-xs">Lorem ipsum</p>
+            <p class="text-s">Lorem ipsum</p>
+            <p class="text-m">Lorem ipsum</p>
+            <p class="text-l">Lorem ipsum</p>
+            <p class="text-xl">Lorem ipsum</p>
+            <p class="text-xxl">Lorem ipsum</p>
+            <p class="text-body">Lorem ipsum</p>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Text Weight</h2>
+        
+        <p class="mb-s text-body">Text weight might depend on the font family set!</p>
+        
+        <div data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-100">thin</p>
+            <p class="text-300">light</p>
+            <p class="text-400">regular</p>
+            <p class="text-500">medium</p>
+            <p class="text-700">bold</p>
+            <p class="text-900">black</p>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Text Alignment</h2>
+        
+        <h3 class="mb-s">Left</h3>
+        
+        <div class="max-width-200" data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-left">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+                
+        <h3 class="mt-m mb-s">Right</h3>
+        
+        <div class="max-width-200" data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-right">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        
+        <h3 class="mt-m mb-s">Center</h3>
+        
+        <div class="max-width-200" data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        
+        <h3 class="mt-m mb-s">Justify</h3>
+        
+        <div class="max-width-200" data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Text Transformation</h2>
+        
+        <div data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="text-capitalize">Lorem ipsum</p>
+            <p class="text-uppercase">Lorem ipsum</p>
+            <p class="text-lowercase">Lorem ipsum</p>
+            <p class="text-underline">Lorem ipsum</p>
+            <p class="text-italic">Lorem ipsum</p>
+        </div>        
+        
+        <h2 class="mt-l mb-s lined">Fonts</h2>
+        
+        <div data-preview='{"offset": "12", "html": "inner"}'>
+            <p class="font-primary">Lorem ipsum</p>
+            <p class="font-secondary">Lorem ipsum</p>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Titles</h2>
+        
+        <article data-preview='{"offset": "12", "html": "inner"}'>
+            <h1 class="title">Lorem ipsum</h1>
+            <h2 class="subtitle">Lorem ipsum</h2>
+        </article>
+        
+        <h2 class="mt-l mb-s lined">@font-face</h2>
+        
+        <p class="mb-s text-body">Example of importing font families with its weight range corresponding to the basis.css weights.</p>
+        
+        <template data-preview='{"offset": "12", "html": "inner"}'>
+            <style>
+            @font-face {
+              font-family: "FuturaBT";
+              src: url("/fonts/FUTURAL.woff") format("woff"),
+                url("/fonts/FUTURAL.woff2") format("woff2");
+              font-weight: 100 300;
+              font-style: normal;
+              font-display: swap;
+            }
+            @font-face {
+              font-family: "FuturaBT";
+              src: url("/fonts/FUTURAM.woff") format("woff"),
+                url("/fonts/FUTURAM.woff2") format("woff2");
+              font-weight: 400 500;
+              font-style: normal;
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: "FuturaBT";
+              src: url("/fonts/FUTURAH.woff") format("woff"),
+                url("/fonts/FUTURAH.woff2") format("woff2");
+              font-weight: 700 900;
+              font-style: normal;
+              font-display: swap;
+            }
+
+            :root {
+              --font-secondary: "FuturaBT";  
+            }
+            </style>
+        </template>
+
+    </article>
+</section>
+    
+</body>
+</html>

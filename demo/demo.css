@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* Layout */
+section {margin: 0 auto; max-width: 80em; padding: 0 1em;}
+article {margin: 2em 0 4em;}
+h1 {font-size: 2.5rem;}
+h2 {font-size: 2rem;}
+h3 {font-size: 1.5rem;}
+.lined {border-bottom: 1px solid #000;}
+
+code {background: #f9f9f9;}
+
+/* Preview code */
+details.preview {cursor: pointer; margin: 1em 0 0 0;}
+figure.preview {padding: 0; margin: 1em 0 0 0; background: #f9f9f9;}
+.preview pre {padding: 1em; margin: 0; background: transparent; line-height: 1.375; font-size: 1rem; overflow-y: auto;}
+.preview pre code {padding: 0;}

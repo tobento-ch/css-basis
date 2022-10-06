@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Columns Demo</title>
+<link href="../basis.css" rel="stylesheet" type="text/css">
+<link href="demo.css" rel="stylesheet" type="text/css">
+<script src="demo.js" async=""></script>
+<style>
+.cols div, .col, [class^="col-"] {
+  border: 1px solid #eb65a0; background: #f9f9f9;
+}
+</style>    
+</head>
+
+<body>
+
+<section>
+    <article>
+        <h1>Columns</h1>
+        
+        <h2 class="mt-s lined">Sizes</h2>
+        
+        <p class="mt-xs mb-s text-body">Compose column by column with class like col-1 to col-12.</p>
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div class="col-12">col-12</div>
+            <div class="col-11">col-11</div>
+            <div class="col-1">col-1</div>
+            <div class="col-10">col-10</div>
+            <div class="col-2">col-2</div>
+            <div class="col-9">col-9</div>
+            <div class="col-3">col-3</div>
+            <div class="col-8">col-8</div>
+            <div class="col-4">col-4</div>
+            <div class="col-7">col-7</div>
+            <div class="col-5">col-5</div>
+            <div class="col-6">col-6</div>
+            <div class="col-6">col-6</div>
+        </div>
+        
+        <h3 class="mt-l">Auto width column.</h3>
+        
+        <p class="mt-xs mb-s text-body">Keep in mind that in this way, your columns will only be a row!</p>
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div class="col">first col</div>
+            <div class="col">second col</div>
+            <div class="col">third col</div>
+        </div>
+        
+        <h3 class="mt-l">Content width column.</h3>
+        
+        <p class="mt-xs mb-s text-body">Just leave the col class out if you want to fit the width of the content.</p>
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div>Lorem ipsum</div>
+            <div class="col">col</div>
+            <div>Lorem ipsum</div>
+            <div class="col">col</div>
+        </div>        
+
+        
+        <h2 class="mt-l mb-s lined">Options for columns</h2>
+        
+        <h3>Nowrap</h3>
+        
+        <p class="mt-xs mb-s text-body">Columns will only be a row.</p>
+        
+        <div class="cols nowrap" data-preview='{"offset": "8"}'>
+            <div class="col-12">col-12</div>
+            <div class="col-6">col-6</div>
+        </div>
+                        
+        <h3 class="mt-l mb-s">Horizontal alignment: left, center and right</h3>
+        
+        <div data-preview='{"offset": "12", "html": "inner"}'>
+            <div class="cols">
+                <div class="col-2">col-2</div>
+                <div class="col-2">col-2</div>
+            </div>
+            <div class="cols center">
+                <div class="col-2">col-2</div>
+                <div class="col-2">col-2</div>
+            </div>
+            <div class="cols right">
+                <div class="col-2">col-2</div>
+                <div class="col-2">col-2</div>
+            </div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Vertical alignment: top, middle and bottom</h3>
+        
+        <div class="cols top" data-preview='{"offset": "8"}'>
+            <div class="col">...</div>
+            <div class="col">
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+            </div>
+            <div class="col">...</div>
+        </div>
+        
+        <div class="mt-l cols middle" data-preview='{"offset": "8"}'>
+            <div class="col">...</div>
+            <div class="col">
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+            </div>
+            <div class="col">...</div>
+        </div>
+        
+        <div class="mt-l cols bottom" data-preview='{"offset": "8"}'>
+            <div class="col">...</div>
+            <div class="col">
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+            </div>
+            <div class="col">...</div>
+        </div>        
+        
+        <h3 class="mt-l mb-s">Reverse</h3>
+
+        <div class="cols reverse" data-preview='{"offset": "8"}'>
+            <div class="col">first col</div>
+            <div class="col">second col</div>
+            <div class="col">third col</div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Single row per column</h3>
+
+        <div class="cols column" data-preview='{"offset": "8"}'>
+            <div class="col">first col</div>
+            <div class="col">second col</div>
+            <div class="col">third col</div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Single row per column reversed</h3>
+        
+        <div class="cols columnReverse" data-preview='{"offset": "8"}'>
+            <div class="col">first col</div>
+            <div class="col">second col</div>
+            <div class="col">third col</div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Space between</h3>
+        
+        <div class="cols spaceBetween" data-preview='{"offset": "8"}'>
+            <div class="col-2">col-2</div>
+            <div class="col-2">col-2</div>
+            <div class="col-2">col-2</div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Space around</h3>
+        
+        <div class="cols spaceAround" data-preview='{"offset": "8"}'>
+            <div class="col-2">col-2</div>
+            <div class="col-2">col-2</div>
+            <div class="col-2">col-2</div>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Options for colum</h2>
+
+        <h3 class="mb-s">Vertical alignment: top, middle and bottom</h3>
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div class="col top">...</div>
+            <div class="col">
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+            </div>
+            <div class="col middle">...</div>
+            <div class="col bottom">...</div>
+        </div>
+        
+        <h2 class="mt-l lined">Column Gaps</h2>
+        
+        <p class="mt-xs mb-s text-body">You may use the padding spacing for gaps.</p>
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div class="col-3 p-s">col-3</div>
+            <div class="col-6 p-s">col-6</div>
+            <div class="col-3 p-s">col-3</div>
+        </div>
+
+        <h2 class="mt-l mb-s lined">Column Responsiveness</h2>
+        
+        <h3 class="mb-s lined">Sizes</h3>
+        
+        <ul class="mb-m bulleted text-xs">
+            <li><code>widescreen-1</code> to <code>widescreen-12</code></li>
+            <li><code>desktop-1</code> to <code>desktop-12</code></li>
+            <li><code>tablet-1</code> to <code>tablet-12</code></li>
+            <li><code>mobile-1</code> to <code>mobile-12</code></li>
+        </ul>
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div class="col-4 tablet-6 mobile-12">col</div>
+            <div class="col-4 tablet-6 mobile-12">col</div>
+            <div class="col-4 tablet-6 mobile-12">col</div>
+        </div>
+
+        <h3 class="mt-l mb-s lined">Options for columns</h3>
+        
+        <p class="mt-xs mb-s text-body">Use <code>widescreen-*</code>, <code>desktop-*</code>, <code>tablet-*</code>, <code>mobile-*</code> with the following alignment classes like tablet-middle.</p>
+        
+        <ul class="mb-m bulleted text-xs">
+            <li><code>*-nowrap</code></li>
+            <li><code>*-center</code></li>
+            <li><code>*-right</code></li>
+            <li><code>*-top</code></li>
+            <li><code>*-middle</code></li>
+            <li><code>*-bottom</code></li>
+            <li><code>*-reverse</code></li>
+        </ul>        
+        
+        <div class="cols top tablet-middle" data-preview='{"offset": "8"}'>
+            <div class="col">...</div>
+            <div class="col">
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+            </div>
+            <div class="col">...</div>
+        </div>
+        
+        <h3 class="mt-l mb-s lined">Options for column</h3>
+        
+        <p class="mt-xs mb-s text-body">Use <code>widescreen-*</code>, <code>desktop-*</code>, <code>tablet-*</code>, <code>mobile-*</code> with the following alignment classes like tablet-middle.</p>
+        
+        <ul class="mb-m bulleted text-xs">
+            <li><code>*-top</code></li>
+            <li><code>*-middle</code></li>
+            <li><code>*-bottom</code></li>
+        </ul>        
+        
+        <div class="cols" data-preview='{"offset": "8"}'>
+            <div class="col tablet-top">...</div>
+            <div class="col">
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+                <p>Lorem Ispsum</p>
+            </div>
+            <div class="col tablet-middle">...</div>
+            <div class="col tablet-bottom">...</div>
+        </div>        
+        
+    </article>
+</section>
+    
+</body>
+</html>

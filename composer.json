@@ -1,0 +1,20 @@
+{
+    "name": "tobento/css-basis",
+    "type": "library",
+    "description": "Basis CSS to start any web project.",
+    "keywords": [
+        "tobento",
+        "css",
+        "responsive",
+        "basis.css"
+    ],
+    "homepage": "https://www.tobento.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tobias Strub",
+            "email": "info@tobento.ch",
+            "homepage": "https://www.tobento.ch"
+        }
+    ]
+}
