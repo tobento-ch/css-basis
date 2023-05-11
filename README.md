@@ -17,6 +17,7 @@ The basis.css provides basic formatting styles for web applications.
     - [Menu](#menu)
     - [Form](#form)
     - [Helpers](#helpers)
+    - [Sizing](#sizing)
     - [Spacing](#spacing)
         - [Margin](#margin)
         - [Padding](#padding)
@@ -347,6 +348,28 @@ Visit the [Demo Page](demo/form.html) for documentation.
 | ```cursor-pointer``` | ```cursor: pointer;``` |
 | ```cursor-move``` | ```cursor: move;``` |
 
+### Misc
+
+| Class | Css |
+| --- | --- |
+| ```scroll-behavior-smooth``` | ```scroll-behavior: smooth;``` |
+
+## Sizing
+
+### Max Width
+
+* ```max-width-xxs``` is of size ```4rem```
+* ```max-width-xs``` is of size ```8rem```
+* ```max-width-s``` is of size ```16rem```
+* ```max-width-m``` is of size ```32rem```
+* ```max-width-l``` is of size ```48rem```
+* ```max-width-xl``` is of size ```64rem```
+* ```max-width-xxl``` is of size ```80rem```
+* ```max-width-min``` is equal to css ```max-width: min-content```
+* ```max-width-max``` is equal to css ```max-width: max-content```
+* ```max-width-fit``` is equal to css ```max-width: fit-content```
+* ```max-width-full``` is equal to css ```max-width: 100%```
+
 ## Spacing
 
 ### Margin
@@ -370,6 +393,7 @@ Available sizes to be appended to margin directions like ```mt-s```:
 * ```l``` is of size ```4rem```
 * ```xl``` is of size ```6rem```
 * ```xxl``` is of size ```8rem```
+* ```auto```
 
 ### Padding
 
