@@ -1,9 +1,5 @@
-<!--
-field left or top
--->
-
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -73,6 +69,8 @@ article{ margin: 2em 0 4em;}
                 
         <h2 class="mt-l mb-s lined">Element Sizes</h2>
         
+        <h3 class="mb-s">Fit Width</h3>
+        
         <p class="text-body mb-s">Use the <code>fit</code> class to fit its parent container.</p>
         
         <div class="mb-s" data-preview='{"offset": "12", "html": "inner"}'>
@@ -81,8 +79,47 @@ article{ margin: 2em 0 4em;}
             <select class="fit" name="cars" id="cars">
                 <option value="volvo">Volvo</option>
                 <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
             </select>
+        </div>
+        
+        <h3 class="mt-l mb-s">Small</h3>
+        
+        <p class="text-body mb-s">Use the <code>small</code> class for small elements.</p>
+        
+        <div class="mb-s" data-preview='{"offset": "12", "html": "inner"}'>
+            <input class="small" name="fit" type="text">
+            <select class="small" name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </select>
+        </div>
+        
+        <h2 class="mt-l mb-s lined">Input Icons</h2>
+        
+        <div class="mb-s max-width-m" data-preview='{"offset": "12", "html": "inner"}'>
+            <div class="input has-icons-left has-icons-right">
+                <input type="text">
+                <span class="icon-left icon px-s py-xs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path d="M0,100H100V90H0ZM100,50H66.67V0H33.33V50H0L50,83.33Z"/></svg>
+                </span>
+                <span class="icon-right icon px-s py-xs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path d="M0,100H100V90H0ZM100,50H66.67V0H33.33V50H0L50,83.33Z"/></svg>
+                </span>
+            </div>
+        </div>
+        
+        <h3 class="mt-l mb-s">Small Input</h3>
+        
+        <div class="mb-s max-width-m" data-preview='{"offset": "12", "html": "inner"}'>
+            <div class="input has-icons-left has-icons-right">
+                <input class="small" type="text">
+                <span class="icon-left icon px-s text-xs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path d="M0,100H100V90H0ZM100,50H66.67V0H33.33V50H0L50,83.33Z"/></svg>
+                </span>
+                <span class="icon-right icon px-s text-xs">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path d="M0,100H100V90H0ZM100,50H66.67V0H33.33V50H0L50,83.33Z"/></svg>
+                </span>
+            </div>
         </div>
         
         <h2 class="mt-l mb-s lined">Field</h2>
