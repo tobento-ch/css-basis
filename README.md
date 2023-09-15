@@ -125,8 +125,8 @@ You may visit the [Demo Page](demo/typography.html) too.
 
 | Class | Example Code |
 | --- | --- |
-| ```title``` | ```<p class="font-primary">Lorem ipsum</p>``` |
-| ```subtitle``` | ```<p class="font-secondary">Lorem ipsum</p>``` |
+| ```title``` | ```<p class="title">Lorem ipsum</p>``` |
+| ```subtitle``` | ```<p class="subtitle">Lorem ipsum</p>``` |
 
 ### @font-face
 
@@ -386,6 +386,7 @@ Available margin directions:
 
 Available sizes to be appended to margin directions like ```mt-s```:
 
+* ```0``` is ```0```
 * ```xxs``` is of size ```0.25rem```
 * ```xs``` is of size ```0.5rem```
 * ```s``` is of size ```1rem```
@@ -409,6 +410,7 @@ Available padding directions:
 
 Available sizes to be appended to padding directions like ```pt-s```:
 
+* ```0``` is ```0```
 * ```xxs``` is of size ```0.25rem```
 * ```xs``` is of size ```0.5rem```
 * ```s``` is of size ```1rem```
