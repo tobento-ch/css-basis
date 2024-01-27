@@ -137,6 +137,7 @@ ul.text-body li, ol.text-body li {line-height: var(--text-body-lh);}
 .text-lowercase {text-transform: lowercase;}
 .text-underline {text-decoration: underline;}
 .text-italic {font-style: italic;}
+.text-truncate {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 /* Fonts */
 .font-primary {font-family: var(--font-primary);}
 .font-secondary {font-family: var(--font-secondary);}
@@ -344,7 +345,8 @@ ul.menu-h li:not(:first-child) {padding-left: 1rem;}
 
 /* Menu base style */
 ul.menu-v.spaced a, ul.menu-h.spaced a,
-ul.menu-v.spaced li > span, ul.menu-h.spaced li > span {
+ul.menu-v.spaced li > span, ul.menu-h.spaced li > span,
+ul.menu-v.spaced button, ul.menu-h.spaced button {
   display: block;
   padding: .5rem 1rem;
   text-decoration: none;
