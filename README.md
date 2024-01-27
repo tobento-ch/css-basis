@@ -113,6 +113,7 @@ You may visit the [Demo Page](demo/typography.html) too.
 | ```text-lowercase``` | Transforms all characters to lowercase |
 | ```text-underline``` | Makes the text underlined |
 | ```text-italic``` | Transforms all characters to italic |
+| ```text-truncate``` | Truncates text with ellipsis |
 
 ### Fonts
 
