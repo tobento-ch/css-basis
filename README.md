@@ -2,6 +2,8 @@
 
 The basis.css provides basic formatting styles for web applications.
 
+You may visit the [**docs.tobento.ch/css-basis**](https://docs.tobento.ch/css-basis) page for documentation and demo.
+
 ## Table of Contents
 
 - [Getting started](#getting-started)
