@@ -339,19 +339,26 @@ ul.menu-v {list-style: none; display: flex; flex-direction: column;}
 ul.menu-v li {list-style: none; flex-grow: 1;}
 ul.menu-v li li {padding-left: 1rem;}
     
-ul.menu-h {list-style: none; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: flex-start;}
+ul.menu-h {list-style: none; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start;}
 ul.menu-h li {list-style: none;}
 ul.menu-h li:not(:first-child) {padding-left: 1rem;}
-
+ul.menu-h.top {align-items: flex-start;}
 /* Menu base style */
 ul.menu-v.spaced a, ul.menu-h.spaced a,
 ul.menu-v.spaced li > span, ul.menu-h.spaced li > span,
 ul.menu-v.spaced button, ul.menu-h.spaced button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: left;
   padding: .5rem 1rem;
   text-decoration: none;
-  text-align: left;
   line-height: normal;
+  font-size: 100%;
+}
+.menu-h .badge, .menu-v .badge {
+  color: var(--color-highlight);
+  font-weight: 700;
+  margin-left: 0.5rem;
 }
 ul.menu-h.spaced li {padding: 0;}
 
