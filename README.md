@@ -18,6 +18,7 @@ You may visit the [**docs.tobento.ch/css-basis**](https://docs.tobento.ch/css-ba
     - [Lists](#lists)
     - [Menu](#menu)
     - [Form](#form)
+    - [Content](#content)
     - [Helpers](#helpers)
     - [Sizing](#sizing)
     - [Spacing](#spacing)
@@ -306,6 +307,10 @@ Visit the [Demo Page](demo/menu.html) for documentation.
 ## Form
 
 Visit the [Demo Page](demo/form.html) for documentation.
+
+## Content
+
+Visit the [Demo Page](demo/content.html) for documentation.
 
 ## Helpers
 
