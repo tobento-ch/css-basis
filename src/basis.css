@@ -209,7 +209,6 @@ button.button {}
 
 .button.fit {width: 100%;}
 /*.button.spaceless {padding: 0;}*/
-.p0 {padding: 0;}
 .button svg {fill: currentColor;}
 
 .button.loading {cursor: wait;}
@@ -362,6 +361,44 @@ ul.menu-v.spaced button, ul.menu-h.spaced button {
 }
 ul.menu-h.spaced li {padding: 0;}
 
+/* Content */
+.content h1 {font-family: var(--font-title); font-size: var(--text-xxl); line-height: var(--text-xxl-lh); font-weight: 700; margin-bottom: 0.5rem;}
+.content h2 {font-family: var(--font-title); font-size: var(--text-xl); line-height: var(--text-xl-lh); font-weight: 700; margin-bottom: 0.5rem;}
+.content h3 {font-family: var(--font-light); font-size: var(--text-l); line-height: var(--text-l-lh); font-weight: 700; margin-bottom: 0.5rem;}
+.content h4 {font-family: var(--font-bold); font-size: var(--text-m); line-height: var(--text-m-lh); font-weight: 700; margin-bottom: 0.5rem;}
+.content h5 {font-family: var(--font-bold); font-size: var(--text-s); line-height: var(--text-s-lh); font-weight: 700; margin-bottom: 0.5rem;}
+.content h6 {font-family: var(--font-bold); font-size: var(--text-xs); line-height: var(--text-xs-lh); font-weight: 700; margin-bottom: 0.5rem;}
+.content ul {margin-left: 1.125rem; line-height: 1.5; list-style-type: disc; list-style-position: outside;}
+.content ul:not(:last-child) {margin-top: 1rem; margin-bottom: 1rem;}
+.content ul li li {margin-left: 1rem; list-style-type: disc;}
+.content ol {list-style-type: none; list-style-position: outside; counter-reset: numlist;}
+.content ol:not(:last-child) {margin-top: 1rem; margin-bottom: 1rem;}
+.content ol li::before {counter-increment: numlist; content: counters(numlist, ".") " ";}
+.content ol li {margin-top: .25rem;}
+.content ol li li {margin-left: 1rem;}
+.content dt {font-weight: 700;}
+.content dd {margin-top: 0.25rem; margin-bottom: 1rem;}
+.content table {margin-top: 1rem; margin-bottom: 1rem;}
+.content table td {padding: 10px 15px; vertical-align: top;}
+.content table img {display: block; }
+.content table th {padding: 10px 15px; text-align: left; border-bottom: 1px solid var(--color-gray-300);}
+.content table td {border-bottom: 1px solid var(--color-gray-300);}
+.content table tr td:nth-child(1), .content table tr th:nth-child(1) {padding-left: 0;}
+.content table tr td:last-of-type, .content table tr th:last-of-type {padding-right: 0;}
+.content p {font-size: var(--text-body); line-height: var(--text-body-lh);}
+.content p:not(:last-child) {margin-bottom: 1rem;}
+.content a:not(.button) {text-decoration: underline;}
+.content blockquote {background-color: var(--color-gray-100); border-left: 5px solid var(--color-gray-300); padding: 0.5rem 1rem; margin-bottom: 1rem;}
+.content pre {background-color: var(--color-gray-100); padding: 0.5rem; margin-bottom: 1rem; white-space: pre-wrap;}
+
+@media screen and (max-width: 768px), print {
+  .content h1 {font-size: var(--text-xl); line-height: var(--text-l-lh);}
+  .content h2 {font-size: var(--text-l); line-height: var(--text-m-lh);}
+  .content h3 {font-size: var(--text-l); line-height: var(--text-m-lh);}
+  .content h4 {font-size: var(--text-m); line-height: var(--text-s-lh);}
+  .content h5 {font-size: var(--text-s); line-height: var(--text-xs-lh);}
+}
+
 /* Helpers */
 .position-sticky {position: sticky;}
 .position-absolute {position: absolute;}
@@ -376,8 +413,8 @@ ul.menu-h.spaced li {padding: 0;}
 .float-right {float: right;}
 .overflow-hidden {overflow: hidden;}
 .overflow-auto {overflow: auto;}
-.overflow-x {overflow-x: auto;}
-.overflow-y {overflow-y: auto;}
+.overflow-x-auto {overflow-x: auto;}
+.overflow-y-auto {overflow-y: auto;}
 .cursor-pointer {cursor: pointer;}
 .cursor-move {cursor: move;}
 .scroll-behavior-smooth {scroll-behavior: smooth;}
