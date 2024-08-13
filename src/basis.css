@@ -23,6 +23,8 @@ img, video {height: auto;  max-width: 100%;}
   --font-secondary: Georgia, "Times New Roman", Times, serif;
   --font-title: Georgia, "Times New Roman", Times, serif;
   --font-subtitle: Georgia, "Times New Roman", Times, serif;
+  --font-light: Georgia, "Times New Roman", Times, serif;
+  --font-bold: Georgia, "Times New Roman", Times, serif;
     
   --font-input: Arial, sans-serif;
   
@@ -145,24 +147,6 @@ ul.text-body li, ol.text-body li {line-height: var(--text-body-lh);}
 .title {font-family: var(--font-title); font-weight: 700;}
 .subtitle {font-family: var(--font-subtitle); font-weight: 400;}
 
-/* Colors */
-/* Signal Colors */
-.text-success {color: var(--color-success);}
-.background-success {background-color: var(--color-success);}
-.text-warning {color: var(--color-warning);}
-.background-warning {background-color: var(--color-warning);}
-.text-error {color: var(--color-error);}
-.background-error {background-color: var(--color-error);}
-.text-info {color: var(--color-info);}
-.background-info {background-color: var(--color-info);}
-.text-highlight {color: var(--color-highlight);}
-.background-highlight {background-color: var(--color-highlight);}
-/* Design Colors */
-.text-primary {color: var(--color-primary-text);}
-.background-primary {background-color: var(--color-primary);}
-.text-secondary {color: var(--color-secondary-text);}
-.background-secondary {background-color: var(--color-secondary);}
-
 /* Buttons */
 .buttons {
   align-items: center;
@@ -199,8 +183,7 @@ button.button {}
 .button.raw {border-color: transparent; background: transparent;}
 .button.raw:hover {border-color: transparent;}
 
-.buttons.spaced .button {margin-bottom: 0.5rem;}
-.buttons.spaced .button:not(:last-child) {margin-right: 0.5rem;}
+.buttons.spaced {gap: 0.5rem;}
 
 .buttons.grouped > * {align-self: stretch;}
 .buttons.grouped .button:not(:last-child) {margin-right: -1px;}
@@ -252,6 +235,24 @@ button.button {}
 .icon.text-xl svg, .icon.text-xxl svg {width: 2rem; height: 2rem;}
 .icon-check svg {fill: var(--color-success);}
 .icon-x-mark svg {fill: var(--color-error);}
+
+/* Colors */
+/* Signal Colors */
+.text-success {color: var(--color-success);}
+.background-success {background-color: var(--color-success);}
+.text-warning {color: var(--color-warning);}
+.background-warning {background-color: var(--color-warning);}
+.text-error {color: var(--color-error);}
+.background-error {background-color: var(--color-error);}
+.text-info {color: var(--color-info);}
+.background-info {background-color: var(--color-info);}
+.text-highlight {color: var(--color-highlight);}
+.background-highlight {background-color: var(--color-highlight);}
+/* Design Colors */
+.text-primary {color: var(--color-primary-text);}
+.background-primary {background-color: var(--color-primary);}
+.text-secondary {color: var(--color-secondary-text);}
+.background-secondary {background-color: var(--color-secondary);}
 
 /* Form */
 checkbox, input, select, textarea {
