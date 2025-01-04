@@ -296,6 +296,21 @@ You may use the [Text Sizes](#text-sizes) for the icon size. Only svg or text ic
 </span>
 ```
 
+### Icon Text
+
+You may use the ```icon-text``` class within any paragraph of text.
+
+```html
+<div class="icon-text">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+    <span class="icon text-xs">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path d="M0,100H100V90H0ZM100,50H66.67V0H33.33V50H0L50,83.33Z"/></svg>
+    </span>
+    tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    </p>
+</div>
+```
+
 ## Lists
 
 Visit the [Demo Page](demo/lists.html) for documentation.
@@ -345,6 +360,7 @@ Visit the [Demo Page](demo/content.html) for documentation.
 | Class | Css |
 | --- | --- |
 | ```overflow-hidden``` | ```overflow: hidden;``` |
+| ```overflow-visible``` | ```overflow: visible;``` |
 | ```overflow-auto``` | ```overflow: auto;``` |
 | ```overflow-x-auto``` | ```overflow-x: auto;``` |
 | ```overflow-y-auto``` | ```overflow-y: auto;``` |
