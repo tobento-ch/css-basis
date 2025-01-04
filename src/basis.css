@@ -95,7 +95,6 @@ a {color: var(--color-click); text-decoration:none;}
 a:hover {color: var(--color-hover); text-decoration:none;}
 a.active {color: var(--color-active); text-decoration:none;}
 a:active {color: var(--color-clicked); text-decoration:none;}
-a svg {fill: currentColor;}
 .link {color: var(--color-click); cursor: pointer;}
 .link:hover {color: var(--color-hover);}
 .link:active {color: var(--color-clicked);}
@@ -157,7 +156,7 @@ ul.text-body li, ol.text-body li {line-height: var(--text-body-lh);}
 .button {
   font-family: var(--font-primary);
   border: 1px solid transparent;
-  background: #fff;
+  background: var(--color-white);
   padding: 6px 15px;
   color: var(--color-click);
   cursor: pointer;
@@ -176,24 +175,16 @@ button.button {}
 .button:active {color: var(--color-clicked); border-color: var(--color-clicked);}
 /*.button:focus {}*/
 .button:disabled{opacity: .5; cursor: not-allowed;}
-
-.button.primary {background: var(--color-click); color: #fff;}
-.button.primary:hover {background: var(--color-hover); color: #fff;}
-
-.button.raw {border-color: transparent; background: transparent;}
+.button.primary {background: var(--color-click); color: var(--color-white);}
+.button.primary:hover {background: var(--color-hover); color: var(--color-white);}
+.button.raw {border-color: transparent; background: transparent; padding: 0;}
 .button.raw:hover {border-color: transparent;}
-
-.buttons.spaced {gap: 0.5rem;}
-
+.buttons.spaced {gap: .75rem;}
 .buttons.grouped > * {align-self: stretch;}
 .buttons.grouped .button:not(:last-child) {margin-right: -1px;}
 .buttons.grouped .button:hover, .buttons.grouped .button.active {z-index: 2;}
 .buttons .expanded {flex-grow: 1; flex-shrink: 1;}
-
 .button.fit {width: 100%;}
-/*.button.spaceless {padding: 0;}*/
-.button svg {fill: currentColor;}
-
 .button.loading {cursor: wait;}
 .button.loading:before {
   content: "";
@@ -228,13 +219,20 @@ button.button {}
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: .25rem;
 }
-.icon > *:not(:last-child) {margin-right: 0.5rem;}
+.icon-text {
+  align-items: flex-start;
+  color: inherit;
+  display: inline-flex;
+  gap: .25rem;
+}
 .icon svg {width: 1.5rem; height: 1.5rem; flex-grow: 0; flex-shrink: 0;}
-.icon.text-xxs svg, .icon.text-xs svg, .icon.text-s svg {width: 1rem; height: 1rem;}
-.icon.text-xl svg, .icon.text-xxl svg {width: 2rem; height: 2rem;}
-.icon-check svg {fill: var(--color-success);}
-.icon-x-mark svg {fill: var(--color-error);}
+.icon.text-xxs svg, .icon.text-xs svg {width: 1rem; height: 1rem;}
+.icon.text-s svg {width: 1.25rem; height: 1.25rem;}
+.icon.text-xl svg, .icon.text-xxl svg {width: 2.5rem; height: 2.5rem;}
+.icon.text-xl, .icon.text-xxl {gap: .5rem;}
+.icon.gapless {gap: 0;}
 
 /* Colors */
 /* Signal Colors */
@@ -263,7 +261,7 @@ checkbox, input, select, textarea {
   line-height: var(--text-input-lh);
   padding: 0.25rem 0.5rem;
   border: 1px dotted var(--color-gray-900);
-  background: #fff;
+  background: var(--color-white);
 }
 checkbox:focus, input:focus, select:focus, textarea:focus {border: 1px solid var(--color-active);}
 input[type="submit"], input[type="reset"] {font-weight: inherit;}
@@ -413,6 +411,7 @@ ul.menu-h.spaced li {padding: 0;}
 .float-left {float: left;}
 .float-right {float: right;}
 .overflow-hidden {overflow: hidden;}
+.overflow-visible {overflow: visible;}
 .overflow-auto {overflow: auto;}
 .overflow-x-auto {overflow-x: auto;}
 .overflow-y-auto {overflow-y: auto;}
@@ -585,7 +584,6 @@ ul.menu-h.spaced li {padding: 0;}
 .cols.spaceBetween {justify-content: space-between;}
 .cols.spaceAround {justify-content: space-around;}
 .cols.equalHeight > [class~="col"], .cols.equalHeight > [class^="col-"] {align-self: stretch;}
-/*.cols.equalHeight > [class~="col"] > *, .cols.equalHeight > [class^="col-"] > * {height: 100%;}*/
 [class~="col"].top, [class^="col-"].top {align-self: flex-start;}
 [class~="col"].middle, [class^="col-"].middle {align-self: center;}
 [class~="col"].bottom, [class^="col-"].bottom {align-self: flex-end;}
