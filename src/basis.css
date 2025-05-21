@@ -79,7 +79,8 @@ img, video {height: auto; max-width: 100%;}
   --color-gray-300: light-dark(#cacaca, #5f5f5f);
   --color-gray-100: light-dark(#f5f5f5, #3d3d3d);
   --color-shadow: light-dark(rgba(0,0,0,0.2), rgba(0,0,0,0.7));
-  
+  --color-dim: light-dark(rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+
   /* Spacing */
   --spacing-xxs: 0.25rem; /* 4px */
   --spacing-xs: 0.5rem; /* 8px */
