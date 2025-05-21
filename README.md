@@ -13,6 +13,7 @@ You may visit the [**docs.tobento.ch/css-basis**](https://docs.tobento.ch/css-ba
     - [Links](#links)
     - [Typography](#typography)
     - [Colors](#colors)
+    - [Color Scheme](#color-scheme)
     - [Buttons](#buttons)
     - [Icons](#icons)
     - [Lists](#lists)
@@ -172,6 +173,30 @@ Example of importing font families with its weight range corresponding to the ba
 ## Colors
 
 Visit the [Demo Page](demo/colors.html) for documentation.
+
+## Color Scheme
+
+The following color scheme is defined in the CSS file as default:
+
+```css
+:root {
+  color-scheme: light dark;
+}
+```
+
+You may force light or dark color scheme by adding one of the CSS class ```light``` or ```dark``` ingoring Browsers color scheme configuration:
+
+```html
+<body class="light">Light color scheme</body>
+<body class="dark">Dark color scheme</body>
+```
+
+Or
+
+```html
+<section class="light">Light color scheme</section>
+<section class="dark">Dark color scheme</section>
+```
 
 ## Buttons
 
@@ -376,6 +401,7 @@ Visit the [Demo Page](demo/content.html) for documentation.
 
 | Class | Css |
 | --- | --- |
+| ```display-none-if-js``` | ```display: none;``` if JavaScript is enabled |
 | ```scroll-behavior-smooth``` | ```scroll-behavior: smooth;``` |
 
 ## Sizing
@@ -393,6 +419,20 @@ Visit the [Demo Page](demo/content.html) for documentation.
 * ```max-width-max``` is equal to css ```max-width: max-content```
 * ```max-width-fit``` is equal to css ```max-width: fit-content```
 * ```max-width-full``` is equal to css ```max-width: 100%```
+
+### Min Width
+
+* ```min-width-xxs``` is of size ```4rem```
+* ```min-width-xs``` is of size ```8rem```
+* ```min-width-s``` is of size ```16rem```
+* ```min-width-m``` is of size ```32rem```
+* ```min-width-l``` is of size ```48rem```
+* ```min-width-xl``` is of size ```64rem```
+* ```min-width-xxl``` is of size ```80rem```
+* ```min-width-min``` is equal to css ```min-width: min-content```
+* ```min-width-max``` is equal to css ```min-width: max-content```
+* ```min-width-fit``` is equal to css ```min-width: fit-content```
+* ```min-width-full``` is equal to css ```min-width: 100%```
 
 ## Spacing
 
