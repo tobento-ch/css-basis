@@ -25,6 +25,7 @@ You may visit the [**docs.tobento.ch/css-basis**](https://docs.tobento.ch/css-ba
     - [Spacing](#spacing)
         - [Margin](#margin)
         - [Padding](#padding)
+    - [Cards](#cards)
     - [Columns](#columns)
         - [Column Sizes](#column-sizes)
         - [Column Options](#column-options)
@@ -389,6 +390,7 @@ Visit the [Demo Page](demo/content.html) for documentation.
 | ```overflow-auto``` | ```overflow: auto;``` |
 | ```overflow-x-auto``` | ```overflow-x: auto;``` |
 | ```overflow-y-auto``` | ```overflow-y: auto;``` |
+| ```overflow-wrap-anywhere``` | ```overflow-wrap: anywhere;``` |
 
 ### Cursor
 
@@ -482,6 +484,82 @@ Available sizes to be appended to padding directions like ```pt-s```:
 * ```l``` is of size ```4rem```
 * ```xl``` is of size ```6rem```
 * ```xxl``` is of size ```8rem```
+
+## Cards
+
+Cards is a simple card system.
+
+### Card Sizes
+
+There are three card sizes available and the main card size:
+
+* ```cards``` is of min width ```350px```
+* ```cards-large``` is of min width ```500px```
+* ```cards-small``` is of min width ```250px```
+* ```cards-xsmall``` is of min width ```150px```
+
+```html
+<div class="cards">
+    <div>Card 1</div>
+    <div>Card 2</div>
+</div>
+
+<div class="cards cards-large">
+    <div>Card 1</div>
+    <div>Card 2</div>
+</div>
+
+<div class="cards cards-small">
+    <div>Card 1</div>
+    <div>Card 2</div>
+</div>
+
+<div class="cards cards-xsmall">
+    <div>Card 1</div>
+    <div>Card 2</div>
+</div>
+```
+
+### Custom Cards Using Data Attributes
+
+You may define any of the three HTML data attributes to customize cards.
+
+* ```data-min-width``` sets the min card width
+* ```data-max-count``` sets the max numbers of cards in a row
+* ```data-gap``` set the grid gap
+
+```html
+<div class="cards" data-min-width="500px" data-max-count="5" data-gap="3rem">
+    <div>Card 1</div>
+    <div>Card 2</div>
+</div>
+```
+
+> **Warning**
+> This feature may be used with caution as it uses the CSS ```attr()``` to set values which is not that well supported yet.
+
+You may add at least a [Card Size](#card-sizes) as a fallback:
+
+```html
+<div class="cards cards-large" data-min-width="500px" data-max-count="5" data-gap="3rem">
+    <div>Card 1</div>
+    <div>Card 2</div>
+</div>
+```
+
+### Card Structure
+
+You may use the following card structure.
+
+```html
+<div class="cards">
+    <div class="card">
+        <div class="card-head">Head</div>
+        <div class="card-body">Body</div>
+        <div class="card-foot">Foot</div>
+    </div>
+</div>
+```
 
 ## Columns
 
