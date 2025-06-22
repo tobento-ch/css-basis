@@ -406,6 +406,49 @@ ul.menu-h.spaced li {padding: 0;}
   .content h5 {font-size: var(--text-s); line-height: var(--text-xs-lh);}
 }
 
+/* Cards */
+.cards {
+  --cards-max-count: 6;
+  --cards-min-width: 350px;
+  --cards-gap: 2rem;
+  
+  /* calculations, do not touch */
+  --cards-size-calc: calc((100% - var(--cards-gap) * var(--cards-max-count)) / var(--cards-max-count));
+  --cards-min-calc: min(100%, max(var(--cards-min-width), var(--cards-size-calc)));
+
+  display: grid;
+  gap: var(--cards-gap);
+  grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--cards-min-calc), 1fr)
+  );
+}
+.cards.cards-large {
+  --cards-min-width: 500px;
+}
+.cards.cards-small {
+  --cards-min-width: 250px;
+}
+.cards.cards-xsmall {
+  --cards-min-width: 150px;
+}
+.card {overflow-x: auto;}
+.card table {width: 100%; margin: 0;}
+.card-head {padding: .25rem; background: var(--color-primary);}
+.card-body {padding: 0 .25rem 1rem .25rem;}
+.card-foot {padding: .25rem; background: var(--color-gray-100);}
+/* mobile */ 
+@media screen and (max-width: 768px), print {
+  --cards-gap: 1rem;
+}
+@supports (x: attr(x type(*))) {
+  .cards {
+    --cards-max-count: attr(data-max-count type(<number>), 6);
+    --cards-min-width: attr(data-min-width type(<length>), 350px);
+    --cards-gap: attr(data-gap type(<length>), 1rem);
+  }
+}
+
 /* Helpers */
 .position-sticky {position: sticky;}
 .position-absolute {position: absolute;}
@@ -423,6 +466,7 @@ ul.menu-h.spaced li {padding: 0;}
 .overflow-auto {overflow: auto;}
 .overflow-x-auto {overflow-x: auto;}
 .overflow-y-auto {overflow-y: auto;}
+.overflow-wrap-anywhere {overflow-wrap: anywhere;}
 .cursor-pointer {cursor: pointer;}
 .cursor-move {cursor: move;}
 .scroll-behavior-smooth {scroll-behavior: smooth;}
