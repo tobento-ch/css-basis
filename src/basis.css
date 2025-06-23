@@ -415,13 +415,17 @@ ul.menu-h.spaced li {padding: 0;}
   /* calculations, do not touch */
   --cards-size-calc: calc((100% - var(--cards-gap) * var(--cards-max-count)) / var(--cards-max-count));
   --cards-min-calc: min(100%, max(var(--cards-min-width), var(--cards-size-calc)));
+  --cards-repeat: auto-fill;
 
   display: grid;
   gap: var(--cards-gap);
   grid-template-columns: repeat(
-      auto-fit,
+      var(--cards-repeat),
       minmax(var(--cards-min-calc), 1fr)
   );
+}
+.cards.fit {
+  --cards-repeat: auto-fit;
 }
 .cards.cards-large {
   --cards-min-width: 500px;
@@ -432,11 +436,26 @@ ul.menu-h.spaced li {padding: 0;}
 .cards.cards-xsmall {
   --cards-min-width: 150px;
 }
-.card {overflow-x: auto;}
+.card {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  position: relative;
+  overflow-x: auto;
+}
 .card table {width: 100%; margin: 0;}
-.card-head {padding: .25rem; background: var(--color-primary);}
-.card-body {padding: 0 .25rem 1rem .25rem;}
-.card-foot {padding: .25rem; background: var(--color-gray-100);}
+.card-body {flex-grow: 1; flex-shrink: 1; padding: 0 .25rem;}
+.card-head,
+.card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  padding: .25rem;
+}
+.card-head {background: var(--color-primary);}
+.card-foot {background: var(--color-gray-100);}
 /* mobile */ 
 @media screen and (max-width: 768px), print {
   --cards-gap: 1rem;
