@@ -500,23 +500,39 @@ There are three card sizes available and the main card size:
 
 ```html
 <div class="cards">
-    <div>Card 1</div>
-    <div>Card 2</div>
+    <div>Card</div>
+    <div>Card</div>
 </div>
 
 <div class="cards cards-large">
-    <div>Card 1</div>
-    <div>Card 2</div>
+    <div>Card</div>
+    <div>Card</div>
 </div>
 
 <div class="cards cards-small">
-    <div>Card 1</div>
-    <div>Card 2</div>
+    <div>Card</div>
+    <div>Card</div>
 </div>
 
 <div class="cards cards-xsmall">
-    <div>Card 1</div>
-    <div>Card 2</div>
+    <div>Card</div>
+    <div>Card</div>
+</div>
+```
+
+### Cards Fit
+
+You may add the CSS ```fit``` class to enforce cards to use its container full width.
+
+```html
+<div class="cards fit">
+    <div>Card</div>
+    <div>Card</div>
+</div>
+
+<div class="cards cards-large fit">
+    <div>Card</div>
+    <div>Card</div>
 </div>
 ```
 
@@ -530,8 +546,8 @@ You may define any of the three HTML data attributes to customize cards.
 
 ```html
 <div class="cards" data-min-width="500px" data-max-count="5" data-gap="3rem">
-    <div>Card 1</div>
-    <div>Card 2</div>
+    <div>Card</div>
+    <div>Card</div>
 </div>
 ```
 
@@ -542,8 +558,8 @@ You may add at least a [Card Size](#card-sizes) as a fallback:
 
 ```html
 <div class="cards cards-large" data-min-width="500px" data-max-count="5" data-gap="3rem">
-    <div>Card 1</div>
-    <div>Card 2</div>
+    <div>Card</div>
+    <div>Card</div>
 </div>
 ```
 
