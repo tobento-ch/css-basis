@@ -369,6 +369,8 @@ Visit the [Demo Page](demo/content.html) for documentation.
 | Class | Css |
 | --- | --- |
 | ```display-none``` | ```display: none;``` |
+| ```display-none-tablet``` | ```display: none;``` only on tablet and mobile |
+| ```display-none-mobile``` | ```display: none;``` only on mobile |
 | ```display-block``` | ```display: block;``` |
 | ```display-inline-block``` | ```display: inline-block;``` |
 | ```display-flex``` | ```display: flex;``` |
@@ -398,6 +400,7 @@ Visit the [Demo Page](demo/content.html) for documentation.
 | --- | --- |
 | ```cursor-pointer``` | ```cursor: pointer;``` |
 | ```cursor-move``` | ```cursor: move;``` |
+| ```cursor-zoom-in``` | ```cursor: zoom-in;``` |
 
 ### Misc
 

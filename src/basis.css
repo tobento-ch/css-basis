@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* Reset */
-html, body, dl, dt, dd, ul, ol, menu, li, h1, h2, h3, h4, h5, h6, pre, iframe, form, fieldset, button, select, input, textarea, p, blockquote, th, td, hr {margin: 0; padding: 0;}
+html, body, dl, dt, dd, ul, ol, menu, li, h1, h2, h3, h4, h5, h6, pre, iframe, form, fieldset, button, select, input, textarea, p, blockquote, th, td, hr, figure {margin: 0; padding: 0;}
 
 h1, h2, h3, h4, h5, h6 {font-size: 100%; font-weight: normal;}
 
@@ -14,7 +14,7 @@ table {border-collapse: collapse; border-spacing: 0;}
 
 fieldset, img, iframe {border: 0;}
 
-img, video {height: auto; max-width: 100%;}
+img, video {height: auto; max-width: 100%; display: block;}
 
 /* Root vars */
 :root {
@@ -243,6 +243,10 @@ button.button {}
 .icon.gapless {gap: 0;}
 
 /* Colors */
+.text-white {color: var(--color-white);}
+.background-white {background-color: var(--color-white);}
+.text-black {color: var(--color-black);}
+.background-black {background-color: var(--color-black);}
 /* Signal Colors */
 .text-success {color: var(--color-success);}
 .background-success {background-color: var(--color-success);}
@@ -458,13 +462,17 @@ ul.menu-h.spaced li {padding: 0;}
 .card-foot {background: var(--color-gray-100);}
 /* mobile */ 
 @media screen and (max-width: 768px), print {
-  --cards-gap: 1rem;
+  .cards.cards-small {
+    --cards-gap: 1rem;
+  }
 }
 @supports (x: attr(x type(*))) {
   .cards {
     --cards-max-count: attr(data-max-count type(<number>), 6);
+    --cards-gap: attr(data-gap type(<length>), 2rem);
+  }
+  .cards, .cards.cards-large, .cards.cards-small, .cards.cards-small {
     --cards-min-width: attr(data-min-width type(<length>), 350px);
-    --cards-gap: attr(data-gap type(<length>), 1rem);
   }
 }
 
@@ -488,11 +496,20 @@ ul.menu-h.spaced li {padding: 0;}
 .overflow-wrap-anywhere {overflow-wrap: anywhere;}
 .cursor-pointer {cursor: pointer;}
 .cursor-move {cursor: move;}
+.cursor-zoom-in {cursor: zoom-in;}
 .scroll-behavior-smooth {scroll-behavior: smooth;}
 @media (scripting: enabled) {
   .display-none-if-js {
     display: none !important;
   }
+}
+/* tablet */ 
+@media screen and (max-width: 1023px), print {
+  .display-none-tablet {display: none;}
+}
+/* mobile */ 
+@media screen and (max-width: 768px), print {
+  .display-none-mobile {display: none;}
 }
 
 /* Sizing */
