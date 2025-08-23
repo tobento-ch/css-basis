@@ -188,6 +188,9 @@ button.button {}
 .button.raw {border-color: transparent; background: transparent; padding: 0;}
 .button.raw:hover {border-color: transparent;}
 .buttons.spaced {gap: .75rem;}
+.buttons.spaced-between {gap: .75rem; justify-content: space-between;}
+.buttons.spaced-around {gap: .75rem; justify-content: space-around;}
+.buttons.spaced-evenly {gap: .75rem; justify-content: space-evenly;}
 .buttons.grouped > * {align-self: stretch;}
 .buttons.grouped .button:not(:last-child) {margin-right: -1px;}
 .buttons.grouped .button:hover, .buttons.grouped .button.active {z-index: 2;}
@@ -317,9 +320,9 @@ input.fit, textarea.fit, select.fit {width: 100%;}
 .field-label .required::before {color: var(--color-highlight); content: "* ";}
 .field-body p {margin-top: var(--spacing-xs);}
 
-.field .wrap-h {display: inline-flex;}
+.field .wrap-h {display: inline-flex; position: relative;}
 .field .wrap-h:not(:first-child) {margin-left: 1.125rem;}
-.field .wrap-v {display: flex;}
+.field .wrap-v {display: flex; position: relative;}
 .field .wrap-v:not(:first-child) {margin-top: var(--spacing-xs);}
 .field .wrap-h label, .field .wrap-v label {margin-left: var(--spacing-xs); font-family: var(--font-input); font-size: var(--text-input); font-weight: var(--text-input-weight);}
 .field .input-value {font-family: var(--font-input); font-size: var(--text-input); font-weight: var(--text-input-weight);}
