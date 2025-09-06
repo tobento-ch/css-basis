@@ -318,7 +318,6 @@ input.fit, textarea.fit, select.fit {width: 100%;}
 .field-label {margin-bottom: var(--spacing-xs);}
 .field-label .required, .field-label .optional { margin-left: var(--spacing-xs); color: var(--color-gray-700); font-weight: normal; font-size: 0.75rem;}
 .field-label .required::before {color: var(--color-highlight); content: "* ";}
-.field-body p {margin-top: var(--spacing-xs);}
 
 .field .wrap-h {display: inline-flex; position: relative;}
 .field .wrap-h:not(:first-child) {margin-left: 1.125rem;}
