@@ -375,6 +375,9 @@ Visit the [Demo Page](demo/content.html) for documentation.
 | ```display-inline-block``` | ```display: inline-block;``` |
 | ```display-flex``` | ```display: flex;``` |
 | ```display-inline-flex``` | ```display: inline-flex;``` |
+| ```!display-none``` | ```display: none !important;``` |
+| ```!display-none-tablet``` | ```display: none !important;``` only on tablet and mobile |
+| ```!display-none-mobile``` | ```display: none !important;``` only on mobile |
 
 ### Float
 
