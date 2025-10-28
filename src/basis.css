@@ -485,6 +485,7 @@ ul.menu-h.spaced li {padding: 0;}
 .position-fixed {position: fixed;}
 .display-none {display: none;}
 .display-block {display: block;}
+.\!display-none {display: none !important;}
 .display-inline-block {display: inline-block;}
 .display-flex {display: flex;}
 .display-inline-flex {display: inline-flex;}
@@ -508,10 +509,12 @@ ul.menu-h.spaced li {padding: 0;}
 /* tablet */ 
 @media screen and (max-width: 1023px), print {
   .display-none-tablet {display: none;}
+  .\!display-none-tablet {display: none !important;}
 }
 /* mobile */ 
 @media screen and (max-width: 768px), print {
   .display-none-mobile {display: none;}
+  .\!display-none-mobile {display: none !important;}
 }
 
 /* Sizing */
