@@ -266,6 +266,17 @@ button.button {}
 .background-primary {background-color: var(--color-primary);}
 .text-secondary {color: var(--color-secondary-text);}
 .background-secondary {background-color: var(--color-secondary);}
+/* Gray Colors */
+.text-gray-100 {color: var(--color-gray-100);}
+.background-gray-100 {background-color: var(--color-gray-100);}
+.text-gray-300 {color: var(--color-gray-300);}
+.background-gray-300 {background-color: var(--color-gray-300);}
+.text-gray-500 {color: var(--color-gray-500);}
+.background-gray-500 {background-color: var(--color-gray-500);}
+.text-gray-700 {color: var(--color-gray-700);}
+.background-gray-700 {background-color: var(--color-gray-700);}
+.text-gray-900 {color: var(--color-gray-900);}
+.background-gray-900 {background-color: var(--color-gray-900);}
 
 /* Form */
 checkbox, input, select, textarea {
@@ -297,6 +308,23 @@ select[size] {height: auto;}
 input[type="file"] {padding-top: 0.6rem;}
 label[for] {cursor: pointer;}
 input.fit, textarea.fit, select.fit {width: 100%;}
+
+/* Form Input Wrap */
+.input-wrap {display: flex; align-items: stretch;}
+.input-wrap .prefix, .input-wrap .suffix {
+  /*background-color: var(--color-gray-100);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  min-width: 2rem;
+  flex-shrink: 0;
+  border: 1px dotted var(--color-gray-900);
+}
+.input-wrap .prefix {border-right: 0;}
+.input-wrap .suffix {border-left: 0;}
+.input-wrap input {display: flex; flex-shrink: 1; min-width: 0;}
+.input-wrap select.prefix, .input-wrap select.suffix {flex-shrink: 1;}
 
 /* Form Icons */
 .input.has-icons-left, .input.has-icons-right {position: relative;}
