@@ -224,6 +224,34 @@ button.button {}
   100% {transform: rotate(360deg);}
 }
 
+/* Badges */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .15rem .45rem;
+  border-radius: .3rem;
+  border: 1px solid color-mix(in srgb, currentColor 50%, transparent);
+}
+.badge.pill {
+  border-radius: 999px;
+}
+.badge.round {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Icons */
 .icon {
   display: inline-flex;
@@ -324,7 +352,7 @@ input.fit, textarea.fit, select.fit {width: 100%;}
 .input-wrap .prefix {border-right: 0;}
 .input-wrap .suffix {border-left: 0;}
 .input-wrap input {display: flex; flex-shrink: 1; min-width: 0;}
-.input-wrap select.prefix, .input-wrap select.suffix {flex-shrink: 1;}
+.input-wrap select.prefix, .input-wrap select.suffix {flex-shrink: 1; width: auto;}
 
 /* Form Icons */
 .input.has-icons-left, .input.has-icons-right {position: relative;}
@@ -394,11 +422,6 @@ ul.menu-v.spaced button, ul.menu-h.spaced button {
   text-decoration: none;
   line-height: normal;
   font-size: 100%;
-}
-.menu-h .badge, .menu-v .badge {
-  color: var(--color-highlight);
-  font-weight: 700;
-  margin-left: 0.5rem;
 }
 ul.menu-h.spaced li {padding: 0;}
 
