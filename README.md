@@ -15,6 +15,7 @@ You may visit the [**docs.tobento.ch/css-basis**](https://docs.tobento.ch/css-ba
     - [Colors](#colors)
     - [Color Scheme](#color-scheme)
     - [Buttons](#buttons)
+    - [Badges](#badges)
     - [Icons](#icons)
     - [Lists](#lists)
     - [Menu](#menu)
@@ -277,6 +278,62 @@ You can create a list of buttons by using the buttons container.
 <div class="buttons">
     <button class="button expanded">Button</button>
     <button class="button expanded">Button</button>
+</div>
+```
+
+## Badges
+
+Badges are small inline UI elements used to highlight status, counts, or labels.
+
+```html
+<span class="badge">Badge</span>
+```
+
+### Badge Colors
+
+You may use the [Colors](#colors) utilities to style badge text or background.
+
+```html
+<span class="badge text-success">success</span>
+<span class="badge background-error text-white">error</span>
+```
+
+### Badge Sizes
+
+Badges inherit their size from the text size.  
+Use the [Text Sizes](#text-sizes) utilities to adjust badge size.
+
+```html
+<span class="badge text-s">Badge</span>
+<span class="badge text-xl">Badge</span>
+```
+
+### Badge Shapes
+
+**round**
+
+Round badges are fixed-size circles, ideal for short content (1–2 characters).
+
+```html
+<span class="badge round">10</span>
+```
+
+**pill**
+
+Pill badges expand based on content and have fully rounded ends.
+
+```html
+<span class="badge pill">1000</span>
+```
+
+### List Of Badges
+
+Use the `.badges` container to display multiple badges with spacing.
+
+```html
+<div class="badges">
+    <span class="badge">Badge</span>
+    <span class="badge">Badge</span>
 </div>
 ```
 
